@@ -1,5 +1,4 @@
 import logo from "../../images/paintLogo.svg";
-import "./App.css";
 
 function App() {
   return (
