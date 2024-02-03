@@ -12,8 +12,20 @@ const Header = () => {
         </NavLink>
       </div>
       <div className="header__nav">
-        {/* <ul className="navigation__container"></ul> */}
-        <p>header</p>
+        <ul className="navigation__container">
+          <li>
+            <button className="navigation__button">Services</button>
+          </li>
+          <li>
+            <button className="navigation__button">Gallary</button>
+          </li>
+          <li>
+            <button className="navigation__button">About Us</button>
+          </li>
+          <li>
+            <button className="navigation__button">Contacts</button>
+          </li>
+        </ul>
       </div>
     </header>
   );

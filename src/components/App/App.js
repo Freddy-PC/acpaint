@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 
 function App() {
   return (
-    <div className="App__page">
+    <div className="app__page">
       <Header />
       <Routes>
         <Route path="/images" element={<Gallary />} />

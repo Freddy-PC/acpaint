@@ -1,8 +1,24 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__container {
 }
 .header__logo {
+  max-width: 300px;
+  max-height: 50px;
 }
 .header__nav {
+}
+.navigation__container {
+  list-style: none;
+  display: flex;
+}
+.navigation__button {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* Display mobile menu */
 }
