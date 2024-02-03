@@ -1,9 +1,12 @@
 .header {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.header__container {
+  justify-content: space-between; /* In case you change the scren size */
+  height: 60px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); detail around */
 }
 .header__logo {
   max-width: 300px;
@@ -20,15 +23,36 @@
   cursor: pointer;
   margin: 10px;
 }
-
-.header__navmobile {
-  cursor: pointer;
+/* Mobile */
+.headernav {
+  margin-left: auto;
+}
+.headernav__links {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  transition: display 0.3s ease-in-out;
 }
 
+.headernav__link {
+  list-style-type: none;
+  margin: 0 1rem;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+/* X Functionality */
+.header__navmobile {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  display: inline-block;
+}
+/* X Functionality */
 .navmobile__container {
   display: inline-block;
 }
-
+/* X Functionality */
 .navmobile__line {
   width: 50px;
   height: 5px;
@@ -36,17 +60,27 @@
   margin: 6px 0;
   transition: transform 0.5s ease-in-out;
 }
-
+/* X Functionality */
 .navmobile__container.active .navmobile__line:nth-child(1) {
   transform: translate(0, 11px) rotate(-45deg);
 }
-
+/* X Functionality */
 .navmobile__container.active .navmobile__line:nth-child(2) {
   transform: scaleX(0);
 }
-
+/* X Functionality */
 .navmobile__container.active .navmobile__line:nth-child(3) {
   transform: translate(0, -11px) rotate(45deg);
+}
+
+.navmobile__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  margin: 10px;
 }
 
 @media screen and (min-width: 1001px) {
@@ -58,7 +92,36 @@
 
 @media screen and (max-width: 1000px) {
   /* Display mobile menu and hide other*/
-  .header__nav {
+  .header__navmobile {
+    display: block;
+  }
+
+  .headernav__links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid black;
     display: none;
+  }
+
+  .headernav__link {
+    text-align: center;
+    margin: 0;
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .headernav__link:hover {
+    background-color: #eee;
+  }
+
+  /* visabillaty at last */
+  .headernav__expanded .headernav__links {
+    display: block;
+    transition: 0.5s;
   }
 }

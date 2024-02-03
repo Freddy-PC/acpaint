@@ -7,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    // if open set to true
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -17,22 +18,6 @@ const Header = () => {
           <img src={logoImage} alt="Weather Logo" className="header__logo" />
         </NavLink>
       </div>
-      <div className="header__nav">
-        <ul className="nav__container">
-          <li>
-            <button className="nav__button">Services</button>
-          </li>
-          <li>
-            <button className="nav__button">Gallary</button>
-          </li>
-          <li>
-            <button className="nav__button">About Us</button>
-          </li>
-          <li>
-            <button className="nav__button">Contacts</button>
-          </li>
-        </ul>
-      </div>
       <div className="header__navmobile">
         <div
           className={`navmobile__container ${isMenuOpen ? "active" : ""}`}
@@ -42,6 +27,30 @@ const Header = () => {
           <div className="navmobile__line"></div>
           <div className="navmobile__line"></div>
         </div>
+      </div>
+      <div className={isMenuOpen ? "headernav__expanded" : "headernav"}>
+        <ul className="headernav__links">
+          <li>
+            <a href="#services" className="headernav__link">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#gallary" className="headernav__link">
+              Gallary
+            </a>
+          </li>
+          <li>
+            <a href="#aboutus" className="headernav__link">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#contacts" className="headernav__link">
+              Contacts
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
   );
