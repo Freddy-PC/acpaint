@@ -1,0 +1,23 @@
+.footer {
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  /* font sizes */
+}
+.footer__image {
+  width: 25px;
+  border-radius: 5px;
+  cursor: help;
+}
+.footer__image:hover {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 500px) {
+  .footer__text {
+    font-size: 10px;
+  }
+}
