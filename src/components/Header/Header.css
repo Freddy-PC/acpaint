@@ -12,35 +12,9 @@
   max-width: 300px;
   max-height: 50px;
 }
-.header__nav {
-  /* font styles and family here later */
-}
-.nav__container {
-  list-style: none;
-  display: flex;
-}
-.nav__button {
-  cursor: pointer;
-  margin: 10px;
-}
-/* Mobile */
-.headernav {
-  margin-left: auto;
-}
-.headernav__links {
-  display: flex;
-  padding: 0;
-  list-style: none;
-  transition: display 0.3s ease-in-out;
-}
 
-.headernav__link {
-  list-style-type: none;
-  margin: 0 1rem;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-}
+/* NEED class for font styles and family here later!!! */
+
 /* X Functionality */
 .header__navmobile {
   position: absolute;
@@ -48,11 +22,13 @@
   cursor: pointer;
   display: inline-block;
 }
-/* X Functionality */
 .navmobile__container {
   display: inline-block;
 }
-/* X Functionality */
+.navmobile__container:hover {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
 .navmobile__line {
   width: 50px;
   height: 5px;
@@ -60,27 +36,33 @@
   margin: 6px 0;
   transition: transform 0.5s ease-in-out;
 }
-/* X Functionality */
 .navmobile__container.active .navmobile__line:nth-child(1) {
   transform: translate(0, 11px) rotate(-45deg);
 }
-/* X Functionality */
 .navmobile__container.active .navmobile__line:nth-child(2) {
   transform: scaleX(0);
 }
-/* X Functionality */
 .navmobile__container.active .navmobile__line:nth-child(3) {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-.navmobile__links {
+/* Menu */
+.headernav__links {
+  display: flex;
+  padding: 0;
+  margin-top: 15px;
   list-style: none;
   padding: 0;
-  margin: 0;
   text-decoration: none;
   color: #333;
   font-size: 16px;
-  margin: 10px;
+}
+.headernav__link {
+  list-style-type: none;
+  margin: 0 1rem;
+  text-decoration: none;
+  width: 100%;
+  display: block;
 }
 
 @media screen and (min-width: 1001px) {
@@ -103,8 +85,10 @@
     left: 0;
     width: 100%;
     background-color: white;
-    border-top: 1px solid black;
-    display: none;
+    border-top: 0.1px solid black;
+    height: 0px;
+    transition: height 0.5s ease; /* after closing */
+    overflow: hidden; /* Hide overflow content */
   }
 
   .headernav__link {
@@ -113,6 +97,7 @@
     color: black;
     width: 100%;
     padding: 1.5rem 0;
+    background-color: #dddddd;
   }
 
   .headernav__link:hover {
@@ -120,8 +105,8 @@
   }
 
   /* visabillaty at last */
-  .headernav__expanded .headernav__links {
-    display: block;
-    transition: 0.5s;
+  .headernav__links.active {
+    height: 500px;
+    transition: height 0.5s ease; /* after opening */
   }
 }

@@ -28,30 +28,28 @@ const Header = () => {
           <div className="navmobile__line"></div>
         </div>
       </div>
-      <div className={isMenuOpen ? "headernav__expanded" : "headernav"}>
-        <ul className="headernav__links">
-          <li>
-            <a href="#services" className="headernav__link">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#gallary" className="headernav__link">
-              Gallary
-            </a>
-          </li>
-          <li>
-            <a href="#aboutus" className="headernav__link">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="#contacts" className="headernav__link">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul className={`headernav__links ${isMenuOpen ? "active" : ""}`}>
+        <li>
+          <a href="#services" className="headernav__link">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#gallary" className="headernav__link">
+            Gallary
+          </a>
+        </li>
+        <li>
+          <a href="#aboutus" className="headernav__link">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#contacts" className="headernav__link">
+            Contacts
+          </a>
+        </li>
+      </ul>
     </header>
   );
 };
