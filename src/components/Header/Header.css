@@ -1,8 +1,10 @@
 .header {
   position: relative;
+}
+.header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* In case you change the scren size */
+  justify-content: space-between; /* In case you change the screen size */
   height: 60px;
   width: 100%;
   padding: 0.5rem 0rem;
@@ -63,6 +65,29 @@
   text-decoration: none;
   width: 100%;
   display: block;
+}
+.header__content {
+}
+.header__title {
+}
+.header__text {
+}
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  text-decoration: none;
+  color: red;
+}
+.header__link:hover {
+  cursor: pointer;
+  opacity: 75%;
+  transition: 0.5s ease-in-out;
+}
+
+.header__location {
 }
 
 @media screen and (min-width: 1001px) {
