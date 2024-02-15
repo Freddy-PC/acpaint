@@ -1,6 +1,6 @@
 import React from "react";
 import "./Main.css";
-import Services from "../Services/Services";
+import Services from "../../components/Services/Services";
 
 function Main() {
   return (

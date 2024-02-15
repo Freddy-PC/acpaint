@@ -5,7 +5,7 @@ function Gallary() {
   return (
     <section className="Gallary">
       <div className="Gallary__container">
-        <p>gallary</p>
+        <p>gallary right here</p>
       </div>
     </section>
   );

@@ -1,17 +1,26 @@
 import React from "react";
 import "./Services.css";
 import ItemCard from "../ItemCard/ItemCard";
+import { servicesData } from "../../utils/constants";
 
 function Services() {
   return (
     <section className="services">
-      <h3 className="services__title">Services</h3>
-      <p className="services__text">Below are some services we provide:</p>
-      <div className="services__container">
-        <ItemCard title="Pressure Washing" text="text here" />
-        <ItemCard title="Exterior Painting" text="text here" />
-        <ItemCard title="Interior Painting" text="text here" />
+      <div className="services__header">
+        <h3 className="services__title">Services</h3>
+        <p className="services__text">Below are some services we provide:</p>
       </div>
+      <ul className="services__list">
+        {servicesData.map((service, index) => (
+          <li key={index} className="services__item">
+            <ItemCard
+              title={service.title}
+              icon={service.image}
+              text={service.text}
+            />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
