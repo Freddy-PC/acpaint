@@ -10,11 +10,11 @@ function ItemCard({ title, icon, text }) {
 
   return (
     <div className="card">
-      <div className="card__container">
+      <div className="card__header">
         <h3 className="card__title">{title}</h3>
         <img className="card__image" src={icon} alt={altText} />
-        <h3 className="card__text">{text}</h3>
       </div>
+      <p className="card__text">{text}</p>
     </div>
   );
 }

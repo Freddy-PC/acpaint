@@ -8,14 +8,11 @@
   height: 60px;
   width: 100%;
   padding: 0.5rem 0rem;
-  /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); detail around */
 }
 .header__logo {
   max-width: 300px;
   max-height: 50px;
 }
-
-/* NEED class for font styles and family here later!!! */
 
 /* X Functionality */
 .header__navmobile {
@@ -57,7 +54,7 @@
   padding: 0;
   text-decoration: none;
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
 }
 .headernav__link {
   list-style-type: none;
@@ -65,12 +62,25 @@
   text-decoration: none;
   width: 100%;
   display: block;
+  color: black;
+  transition: 0.5s ease-out;
+}
+.headernav__link:hover {
+  transition: 0.2s ease-in;
+  color: rgb(0, 205, 0);
+  text-decoration: underline;
 }
 .header__content {
+  padding: 100px 0 100px;
+  margin: 0;
+  /* image here */
 }
 .header__title {
+  font-size: 50px;
 }
 .header__text {
+  max-width: 600px;
+  font-size: 25px;
 }
 .header__footer {
   display: flex;
@@ -79,12 +89,20 @@
 }
 .header__link {
   text-decoration: none;
-  color: red;
+  color: black;
+  border-color: black;
+  font-size: 20px;
+  transition: 0.5s ease-out;
+  padding: 10px;
+  border-radius: 15px;
+  border-style: groove;
 }
 .header__link:hover {
   cursor: pointer;
-  opacity: 75%;
-  transition: 0.5s ease-in-out;
+  opacity: 90%;
+  transition: 0.2s ease-in;
+  border-color: black;
+  color: red;
 }
 
 .header__location {
@@ -101,6 +119,11 @@
   /* Display mobile menu and hide other*/
   .header__navmobile {
     display: block;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headernav__links {
@@ -126,12 +149,30 @@
   }
 
   .headernav__link:hover {
-    background-color: #eee;
+    color: black;
+    background-color: rgb(0, 205, 0);
   }
 
   /* visabillaty at last */
   .headernav__links.active {
     height: 500px;
     transition: height 0.5s ease; /* after opening */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__link,
+  .header__location {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__footer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__logo {
+    width: 150px;
   }
 }
