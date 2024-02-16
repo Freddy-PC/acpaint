@@ -1,19 +1,49 @@
-/* Add components/files later as you progress */
+/* Big lettering */
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../src/vendor/fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../src/vendor/fonts/Lato-Bold.ttf") format("truetype");
+}
+
+/* small lettering */
+@font-face {
+  font-family: "Roboto-Bold-Italic";
+  src: url("../src/vendor/fonts/Roboto-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Bold-Italic";
+  src: url("../src/vendor/fonts/Lato-BoldItalic.ttf") format("truetype");
+}
 
 @import url(./vendor/normalize.css);
 @import url(../src/components/App/App.css);
 @import url(../src/components/Header/Header.css);
 
 @import url(../src/components/Main/Main.css);
+@import url(../src/components/Services/Services.css);
+@import url(../src/components/ItemCard/ItemCard.css);
+
 @import url(../src/components/Gallary/Gallary.css);
 @import url(../src/components/Footer/Footer.css);
 
 /* @import url(); */
-/* @import url(../src/components/ItemCard/ItemCard.css); */
 /* @import url(../src/components/ItemModal/ItemModal.css); */
 
+h1,
+h3 {
+  font-family: "Roboto-Medium", "Lato-Bold", sans-serif;
+}
+p {
+  font-family: "Roboto-Bold-Italic", "Lato-Bold-Italic", sans-serif;
+  font-size: 18px;
+}
+a {
+}
 /* Body of HTML */
 .body {
   margin: 0;
-  /* background-color: #dcdcdc; */
+  background-color: red;
 }

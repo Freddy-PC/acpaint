@@ -27,7 +27,7 @@
 .services__item {
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   border-radius: 5%;
-  flex: 0 0 350px; /* Set flex-basis to 350px for fixed width */
+  flex: 0 0 325px; /* Set flex-basis to 350px for fixed width */
   transition: transform 0.3s ease;
 }
 .services__item:hover {
