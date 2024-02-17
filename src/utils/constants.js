@@ -5,6 +5,9 @@ import exterior from "../images/houseLogo.png";
 import interior from "../images/interiorLogo.png";
 import ceiling from "../images/ceilingLogo.png";
 import stain from "../images/stainLogo.png";
+import fence from "../images/fenceLogo.png";
+import cabinet from "../images/cabinetLogo.png";
+import deck from "../images/deck-porchLogo.png";
 
 const servicesData = [
   {
@@ -22,11 +25,13 @@ const servicesData = [
     image: interior,
     text: "Our interior painting service provides premium quality and attention to detail with flawless finishes and vibrant, long-lasting results that reflect your unique style and personality.",
   },
-  //   { title: "Additional Painting", image: imageHere, text: "text here" },
-  //   { title: "Additional Painting", image: imageHere, text: "text here" },
-  //   { title: "Additional Painting", image: imageHere, text: "text here" },
   {
-    title: "Stain",
+    title: "Additional Painting",
+    image: [fence, cabinet, deck],
+    text: "text here",
+  },
+  {
+    title: "Staining Service",
     image: stain,
     text: "Our staining services enhance both the appearance and durability of surfaces, providing long-lasting protection against the elements.",
   },
