@@ -1,13 +1,12 @@
-.card {
-}
+/* .card {} */
 .card__header {
+  z-index: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.card__title {
-}
+/* .card__title {} */
 .card__image {
   width: 150px;
 }
@@ -16,29 +15,77 @@
 .card__image_cardIndex3-imageIndex1,
 .card__image_cardIndex3-imageIndex2 {
   position: absolute;
-  width: 75px;
+  width: 70px;
+  z-index: 1;
 }
-
 .card__image_cardIndex3-imageIndex0 {
-  top: 100px;
+  top: 125px;
   left: 50px;
 }
 .card__image_cardIndex3-imageIndex1 {
-  top: 35px;
+  top: 37px;
 }
 .card__image_cardIndex3-imageIndex2 {
-  top: 100px;
+  top: 125px;
   right: 50px;
 }
 
 /* If there are no images */
 .card__image_placeholder {
+  z-index: -1;
+  border-style: dashed;
+  border-radius: 90%;
+  border-color: rgb(112, 112, 112);
   width: 150px;
   height: 150px;
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .card__text {
   font-size: 15px;
   margin: 0;
   padding: 25px;
+}
+
+/* Small changes for image positions in small screens */
+@media screen and (max-width: 500px) {
+  .card__image_cardIndex3-imageIndex0 {
+    top: 125px;
+    left: 80px;
+  }
+  .card__image_cardIndex3-imageIndex2 {
+    top: 125px;
+    right: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card__image_cardIndex3-imageIndex0 {
+    top: 125px;
+    left: 30px;
+  }
+  .card__image_cardIndex3-imageIndex2 {
+    top: 125px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card__image_cardIndex3-imageIndex0 {
+    top: 125px;
+    left: 10px;
+  }
+  .card__image_cardIndex3-imageIndex2 {
+    top: 125px;
+    right: 10px;
+  }
 }
