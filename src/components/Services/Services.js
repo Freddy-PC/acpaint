@@ -17,6 +17,7 @@ function Services() {
               title={service.title}
               icon={service.image}
               text={service.text}
+              cardIndexNumber={index}
             />
           </li>
         ))}
