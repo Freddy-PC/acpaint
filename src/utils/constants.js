@@ -1,5 +1,3 @@
-// import all images used for the array of objects below
-// import image from "../images/brightnight.svg";
 import hoseLogo from "../images/hoseLogo.png";
 import exterior from "../images/houseLogo.png";
 import interior from "../images/interiorLogo.png";
@@ -12,33 +10,33 @@ import deck from "../images/deck-porchLogo.png";
 const servicesData = [
   {
     title: "Pressure Washing",
-    text: "Our company offers expert pressure washing services designed specifically for painting preparation.",
+    text: "Preparing to paint your home or office? Let us help with our expert pressure washing services tailored specifically for painting prep.",
     image: hoseLogo,
   },
   {
     title: "Exterior Painting",
     image: exterior,
-    text: "Our company offers durable and weather-resistant coatings that improve the overall look and feel of your property, adding to its curb appeal.",
+    text: "We offer durable and weather-resistant coatings that can improve your property's overall look and feel, adding to its curb appeal.",
   },
   {
     title: "Interior Painting",
     image: interior,
-    text: "Our interior painting service provides premium quality and attention to detail with flawless finishes and vibrant, long-lasting results that reflect your unique style and personality.",
+    text: "If you want premium quality and attention to detail in your interior painting, our service provides flawless finishes and vibrant, long-lasting results that reflect your unique style and personality.",
   },
   {
     title: "Additional Painting",
-    image: [fence, cabinet, deck],
-    text: "text here",
+    image: [fence, deck, cabinet],
+    text: "We also offer additional painting services to cover all your painting needs, including fence, deck painting, and cabinet.",
   },
   {
     title: "Staining Service",
     image: stain,
-    text: "Our staining services enhance both the appearance and durability of surfaces, providing long-lasting protection against the elements.",
+    text: "If you want to improve the appearance and durability of your surfaces, consider our staining services. With our services, you can expect long-lasting protection against the elements.",
   },
   {
     title: "Popcorn Removal",
     image: ceiling,
-    text: "Tired of that bumpy cieling? Our popcorn removal service is quick, efficient, and tidy, with expert attention to detail. We also provide clean-up service, leaving your property looking new.",
+    text: "Are you tired of that bumpy ceiling? Our popcorn removal service is quick, efficient, and tidy, with expert attention to detail. We also provide a clean-up service, leaving your property looking new.",
   },
 ];
 
