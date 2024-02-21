@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Gallary from "../Gallary/Gallary";
+import Contacts from "../Contacts/Contacts";
 import Footer from "../Footer/Footer";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/images" element={<Gallary />} />
         <Route path="/" element={<Main />} />
       </Routes>
+      <Contacts />
       <Footer />
     </div>
   );
