@@ -32,7 +32,30 @@
   cursor: pointer;
   transform: scale(1.05);
 }
-
+.services__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.services__footer-text {
+  margin: 0;
+}
+.services__footer-text:nth-child(2) {
+  margin: 15px 0 50px 0;
+}
+.services__footer-link {
+  font-family: "Roboto-Bold-Italic", "Lato-Bold-Italic", sans-serif;
+  padding: 15px;
+  border-radius: 20%;
+  background-color: white;
+  transition: 0.5s ease-out;
+  border-style: solid;
+}
+.services__footer-link:hover {
+  cursor: pointer;
+  background-color: rgb(228, 228, 228);
+}
 /* ipad mini users eating good with the dual cards */
 @media screen and (max-width: 850px) {
   .services__item {

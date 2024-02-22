@@ -39,6 +39,7 @@
   width: 150px;
   height: 150px;
   animation: rotate 15s linear infinite;
+  border-width: 5px;
 }
 
 @keyframes rotate {

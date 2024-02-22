@@ -103,6 +103,7 @@
   transition: 0.2s ease-in;
   border-color: black;
   color: red;
+  background-color: #f1f1f1;
 }
 
 .header__location {
@@ -146,6 +147,7 @@
     width: 100%;
     padding: 1.5rem 0;
     background-color: #dddddd;
+    transition: 1sec;
   }
 
   .headernav__link:hover {

@@ -14,7 +14,7 @@ const Contacts = () => {
         </p>
       </div>
       <div className="contacts__columns">
-        <div className="contacts__column contacts__column_content_social">
+        <div className="contacts__column">
           <h3 className="=contacts__title">Socials</h3>
           <ul className="contacts__list">
             <li className="contacts__list-item">
@@ -35,7 +35,7 @@ const Contacts = () => {
             </li>
           </ul>
         </div>
-        <div className="contacts__column contacts__column_content_hours">
+        <div className="contacts__column">
           <h3 className="=contacts__title">Hours</h3>
           <p className="=contacts__text-hours">Weekdays: 7:00AM - 5:00PM</p>
           <p className="=contacts__text-hours">Weekends: 7:00AM - 5:00PM</p>

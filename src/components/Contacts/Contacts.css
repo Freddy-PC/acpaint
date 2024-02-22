@@ -1,4 +1,5 @@
 .contacts {
+  padding: 100px 0 100px 0;
 }
 .contacts__header {
   display: flex;
@@ -6,10 +7,8 @@
   align-items: center;
   text-align: center;
 }
-.contacts__header {
-}
-.contacts__title {
-}
+/* .contacts__header {}
+.contacts__title {} */
 .contacts__list {
   list-style: none;
   padding: 0;
@@ -19,8 +18,7 @@
   display: flex;
   align-items: center;
 }
-.contacts__text {
-}
+/* .contacts__text {} */
 .contacts__image {
   margin-right: 25px;
   width: 10%;
@@ -28,19 +26,18 @@
 }
 .contacts__columns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .contacts__column {
   display: flex;
   flex-direction: column;
 }
-.contacts__column_content_social {
-}
-.contacts__column_content_hours {
-}
-.contacts__title {
-}
-.contacts__info {
-}
-.contacts__text-hours {
+/* .contacts__title {}
+.contacts__info {}
+.contacts__text-hours {} */
+
+@media screen and (max-width: 550px) {
+  .contacts__columns {
+    flex-direction: column;
+  }
 }

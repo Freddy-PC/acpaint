@@ -22,6 +22,15 @@ function Services() {
           </li>
         ))}
       </ul>
+      <div className="services__footer">
+        <p className="services__footer-text">
+          Explore our company's services through our Gallery page.
+        </p>
+        <p className="services__footer-text">
+          Click the link to browse our collection of images and descriptions.
+        </p>
+        <button className="services__footer-link">🖼️ Gallery</button>
+      </div>
     </section>
   );
 }
