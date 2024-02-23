@@ -5,17 +5,17 @@ import phoneLogo from "../../images/phoneLogo.png";
 
 const Contacts = () => {
   return (
-    <div className="contacts">
+    <div className="contacts" id="contacts">
       <div className="contacts__header">
-        <h1 className="=contacts__title">Contacts</h1>
-        <p className="=contacts__text">
+        <h1 className="contacts__title">Contacts</h1>
+        <p className="contacts__text">
           We offer free estimates. Feel free to email or call us regarding any
           of your painting needs.
         </p>
       </div>
       <div className="contacts__columns">
         <div className="contacts__column">
-          <h3 className="=contacts__title">Socials</h3>
+          <h3 className="contacts__title">Socials</h3>
           <ul className="contacts__list">
             <li className="contacts__list-item">
               <img
@@ -36,9 +36,9 @@ const Contacts = () => {
           </ul>
         </div>
         <div className="contacts__column">
-          <h3 className="=contacts__title">Hours</h3>
-          <p className="=contacts__text-hours">Weekdays: 7:00AM - 5:00PM</p>
-          <p className="=contacts__text-hours">Weekends: 7:00AM - 5:00PM</p>
+          <h3 className="contacts__title">Hours</h3>
+          <p className="contacts__text-hours">Weekdays: 7:00AM - 5:00PM</p>
+          <p className="contacts__text-hours">Weekends: 7:00AM - 5:00PM</p>
         </div>
       </div>
     </div>

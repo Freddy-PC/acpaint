@@ -5,7 +5,7 @@ import { servicesData } from "../../utils/constants";
 
 function Services() {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <div className="services__header">
         <h3 className="services__title">Services</h3>
         <p className="services__text">Below are some services we provide:</p>
