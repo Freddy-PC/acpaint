@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logoImage from "../../images/paintLogo.svg";
 
-const Header = ({ handleGalleryLinkClick }) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // if mobile menu is open set to true
@@ -11,6 +11,7 @@ const Header = ({ handleGalleryLinkClick }) => {
     setIsMenuOpen(!isMenuOpen);
   };
   const closeMenu = () => {
+    console.log("closeMenu called");
     setIsMenuOpen(false);
   };
   // guide user in main page
@@ -18,6 +19,7 @@ const Header = ({ handleGalleryLinkClick }) => {
     setTimeout(() => {
       const servicesSection = document.getElementById(sectionId);
       if (servicesSection) {
+        console.log(servicesSection);
         servicesSection.scrollIntoView({ behavior: "smooth" });
       } else {
         console.error(`Element with id ${sectionId} not found.`);
@@ -43,36 +45,40 @@ const Header = ({ handleGalleryLinkClick }) => {
         </div>
         <ul className={`headernav__links ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <NavLink
-              to="/services"
-              className="headernav__link"
-              onClick={() => {
-                scrollToSection("services");
-                closeMenu();
-              }}
-            >
-              Services
+            <NavLink to="/" className="header__navlink">
+              <button
+                className="headernav__link"
+                onClick={() => {
+                  scrollToSection("services");
+                  closeMenu();
+                }}
+              >
+                Services
+              </button>
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/contacts"
-              className="headernav__link"
-              onClick={() => {
-                scrollToSection("contacts");
-                closeMenu();
-              }}
-            >
-              Contacts
+            <NavLink to="/" className="header__navlink">
+              <button
+                className="headernav__link"
+                onClick={() => {
+                  scrollToSection("contacts");
+                  closeMenu();
+                }}
+              >
+                Contacts
+              </button>
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/gallery"
-              className="headernav__link"
-              onClick={handleGalleryLinkClick}
+              className="header__navlink"
+              onClick={() => {
+                closeMenu();
+              }}
             >
-              Gallery
+              <button className="headernav__link">Gallery</button>
             </NavLink>
           </li>
           {/* <li>
@@ -91,15 +97,16 @@ const Header = ({ handleGalleryLinkClick }) => {
         </p>
       </div>
       <div className="header__footer">
-        <NavLink
-          to="/contacts"
-          className="header__link"
-          onClick={() => {
-            scrollToSection("contacts");
-            closeMenu();
-          }}
-        >
-          How to Contact Us 🤔❓
+        <NavLink to="/">
+          <button
+            className="header__link"
+            onClick={() => {
+              scrollToSection("contacts");
+              closeMenu();
+            }}
+          >
+            How to Contact Us 🤔❓
+          </button>
         </NavLink>
         <p className="header__location">Asheville, North Carolina</p>
       </div>

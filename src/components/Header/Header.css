@@ -44,7 +44,9 @@
 .navmobile__container.active .navmobile__line:nth-child(3) {
   transform: translate(0, -11px) rotate(45deg);
 }
-
+.header__navlink {
+  text-decoration: none;
+}
 /* Menu */
 .headernav__links {
   display: flex;
@@ -52,18 +54,19 @@
   margin-top: 15px;
   list-style: none;
   padding: 0;
-  text-decoration: none;
   color: #333;
   font-size: 20px;
 }
 .headernav__link {
-  list-style-type: none;
   margin: 0 1rem;
   text-decoration: none;
   width: 100%;
   display: block;
   color: black;
+  background-color: white;
   transition: 0.5s ease-out;
+  border-style: none;
+  padding: 0;
 }
 .headernav__link:hover {
   transition: 0.2s ease-in;
@@ -103,7 +106,7 @@
   transition: 0.2s ease-in;
   border-color: black;
   color: red;
-  background-color: #f1f1f1;
+  background-color: #c9c9c9;
 }
 
 .header__location {

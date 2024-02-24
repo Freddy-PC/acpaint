@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Services.css";
 import ItemCard from "../ItemCard/ItemCard";
 import { servicesData } from "../../utils/constants";
@@ -29,7 +30,9 @@ function Services() {
         <p className="services__footer-text">
           Click the link to browse our collection of images and descriptions.
         </p>
-        <button className="services__footer-link">🖼️ Gallery</button>
+        <NavLink to="/gallery">
+          <button className="services__footer-link">📷 Gallery 🖼️</button>
+        </NavLink>
       </div>
     </section>
   );
