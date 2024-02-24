@@ -20,17 +20,20 @@
 
 @import url(./vendor/normalize.css);
 @import url(../src/components/App/App.css);
-@import url(../src/components/Header/Header.css);
+
+@import url(../src/components/Navigation/Navigation.css);
 
 @import url(../src/components/Main/Main.css);
+@import url(../src/components/Header/Header.css);
 @import url(../src/components/Services/Services.css);
 @import url(../src/components/ItemCard/ItemCard.css);
 
 @import url(../src/components/Gallary/Gallary.css);
+/* @import url(../src/components/ItemModal/ItemModal.css); */
+@import url(../src/components/Contacts/Contacts.css);
 @import url(../src/components/Footer/Footer.css);
 
 /* @import url(); */
-/* @import url(../src/components/ItemModal/ItemModal.css); */
 
 h1,
 h3 {
