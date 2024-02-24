@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-/* Fix class names //////////////////////////////*/
 import "../Header/Header.css";
 import "./Navigation.css";
 
@@ -20,13 +19,19 @@ const Navigation = ({
 
   return (
     <nav className="navigation">
-      <div className="header__container">
-        <NavLink to="/">
-          <img src={logoImage} alt="Weather Logo" className="header__logo" />
+      <div className="navigation__container">
+        <NavLink to="/" onClick={closeMenu}>
+          <img
+            src={logoImage}
+            alt="Weather Logo"
+            className="navigation__logo"
+          />
         </NavLink>
-        <div className="header__navmobile">
+        <div className="navigation__navmobile">
           <div
-            className={`navmobile__container ${isMenuOpen ? "active" : ""}`}
+            className={`navmobile__container ${
+              isMenuOpen ? "navmobile__container_active" : ""
+            }`}
             onClick={toggleMenu}
           >
             <div className="navmobile__line"></div>
@@ -34,11 +39,15 @@ const Navigation = ({
             <div className="navmobile__line"></div>
           </div>
         </div>
-        <ul className={`headernav__links ${isMenuOpen ? "active" : ""}`}>
+        <ul
+          className={`navigation__links ${
+            isMenuOpen ? "navigation__links_active" : ""
+          }`}
+        >
           <li>
-            <NavLink to="/" className="header__navlink">
+            <NavLink to="/" className="navigation__navlink">
               <button
-                className="headernav__link"
+                className="navigation__link"
                 onClick={() => {
                   scrollToSection("services");
                   closeMenu();
@@ -49,9 +58,9 @@ const Navigation = ({
             </NavLink>
           </li>
           <li>
-            <NavLink to="/" className="header__navlink">
+            <NavLink to="/" className="navigation__navlink">
               <button
-                className="headernav__link"
+                className="navigation__link"
                 onClick={() => {
                   scrollToSection("contacts");
                   closeMenu();
@@ -64,12 +73,12 @@ const Navigation = ({
           <li>
             <NavLink
               to="/gallery"
-              className="header__navlink"
+              className="navigation__navlink"
               onClick={() => {
                 closeMenu();
               }}
             >
-              <button className="headernav__link">Gallery</button>
+              <button className="navigation__link">Gallery</button>
             </NavLink>
           </li>
           {/* <li>

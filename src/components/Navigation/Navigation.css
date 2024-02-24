@@ -1,7 +1,7 @@
 .navigation {
   position: relative;
 }
-.header__container {
+.navigation__container {
   display: flex;
   align-items: center;
   justify-content: space-between; /* In case you change the screen size */
@@ -9,11 +9,11 @@
   width: 100%;
   padding: 0.5rem 0rem;
 }
-.header__logo {
+.navigation__logo {
   max-width: 300px;
   max-height: 50px;
 }
-.header__navmobile {
+.navigation__navmobile {
   position: absolute;
   right: 0px;
   cursor: pointer;
@@ -34,20 +34,20 @@
   margin: 6px 0;
   transition: transform 0.5s ease-in-out;
 }
-.navmobile__container.active .navmobile__line:nth-child(1) {
+.navmobile__container_active .navmobile__line:nth-child(1) {
   transform: translate(0, 11px) rotate(-45deg);
 }
-.navmobile__container.active .navmobile__line:nth-child(2) {
+.navmobile__container_active .navmobile__line:nth-child(2) {
   transform: scaleX(0);
 }
-.navmobile__container.active .navmobile__line:nth-child(3) {
+.navmobile__container_active .navmobile__line:nth-child(3) {
   transform: translate(0, -11px) rotate(45deg);
 }
-.header__navlink {
+.navigation__navlink {
   text-decoration: none;
 }
 /* Menu */
-.headernav__links {
+.navigation__links {
   display: flex;
   padding: 0;
   margin-top: 15px;
@@ -56,7 +56,7 @@
   color: #333;
   font-size: 20px;
 }
-.headernav__link {
+.navigation__link {
   margin: 0 1rem;
   text-decoration: none;
   width: 100%;
@@ -67,25 +67,26 @@
   border-style: none;
   padding: 0;
 }
-.headernav__link:hover {
+.navigation__link:hover {
   transition: 0.2s ease-in;
   color: rgb(62, 130, 255);
   text-decoration: underline;
 }
+
 @media screen and (min-width: 1001px) {
   /* Hide mobile*/
-  .header__navmobile {
+  .navigation__navmobile {
     display: none;
   }
 }
 
 @media screen and (max-width: 1000px) {
   /* Display mobile menu and hide other*/
-  .header__navmobile {
+  .navigation__navmobile {
     display: block;
   }
 
-  .headernav__links {
+  .navigation__links {
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -98,7 +99,7 @@
     overflow: hidden; /* Hide overflow content */
   }
 
-  .headernav__link {
+  .navigation__link {
     text-align: center;
     margin: 0;
     color: black;
@@ -108,13 +109,13 @@
     transition: 1sec;
   }
 
-  .headernav__link:hover {
+  .navigation__link:hover {
     color: black;
     background-color: rgb(93, 149, 255);
   }
 
-  /* visabillaty at last */
-  .headernav__links.active {
+  /* visabillaty at last for links*/
+  .navigation__links_active {
     height: 245px;
     transition: height 0.5s ease; /* after opening */
   }
