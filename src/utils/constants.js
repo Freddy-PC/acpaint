@@ -7,6 +7,9 @@ import fence from "../images/fenceLogo.png";
 import cabinet from "../images/cabinetLogo.png";
 import deck from "../images/deck-porchLogo.png";
 
+import deckPic from "../images/headerBackground.jpg";
+import blackHouse from "../images/blackHouse.jpg";
+
 const servicesData = [
   {
     title: "Pressure Washing",
@@ -40,4 +43,22 @@ const servicesData = [
   },
 ];
 
-export { servicesData };
+const galleryData = [
+  // {
+  //   image: logoPic,
+  //   description: "",
+  //   service: "",
+  // },
+  {
+    image: deckPic,
+    description: "",
+    service: "",
+  },
+  {
+    image: blackHouse,
+    description: "",
+    service: "",
+  },
+];
+
+export { servicesData, galleryData };
