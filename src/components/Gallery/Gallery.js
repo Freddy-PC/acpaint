@@ -15,8 +15,13 @@ function Gallery() {
           Welcome to our Painting Services Gallery!
         </p>
         <p className="gallery__text">
-          Please browse our collection of images and let us know if you have any
-          questions.
+          Please browse our{" "}
+          <span className="gallery__text_underline">collection of images</span>{" "}
+          and let us know if you have any questions.
+        </p>
+        <p className="gallery__text">
+          To view a larger version of the image, simply{" "}
+          <span className="gallery__text_bold">click</span> on it. 👆🏼
         </p>
       </div>
       <div className="gallery__images">
