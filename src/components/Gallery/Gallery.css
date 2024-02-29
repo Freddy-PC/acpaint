@@ -1,5 +1,4 @@
-.gallery {
-}
+/* .gallery {} */
 .gallery__header {
   background-color: rgb(168, 168, 168);
   padding: 50px 0 50px 0;
@@ -27,13 +26,28 @@
 .gallery__image-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 30px;
 }
 .gallery__image-item {
+  width: 320px;
+  height: 350px;
 }
 .gallery__image {
   width: 100%;
+  height: 100%;
+  border: solid;
+  border-radius: 10px;
+  border-color: rgb(41, 41, 41);
 }
-
+.gallery__image:hover {
+  cursor: pointer;
+  opacity: 90%;
+  transition: 0.3s ease-out;
+}
 @media screen and (max-width: 600px) {
   .gallery__text {
     padding: 0 0 10px 0;

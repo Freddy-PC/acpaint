@@ -4,11 +4,6 @@ import { galleryData } from "../../utils/constants";
 
 // need to make a alt tag functionality
 // conditionally renders the description
-
-// 4 images should render on desktop
-// 3 on smaller screens
-// 2 on small screens
-
 // in future only images that pertain to the service will appear
 
 function Gallery() {
