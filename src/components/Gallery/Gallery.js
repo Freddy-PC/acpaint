@@ -6,7 +6,7 @@ import { galleryData } from "../../utils/constants";
 // conditionally renders the description
 // in future only images that pertain to the service will appear
 
-function Gallery() {
+function Gallery({ cardClick }) {
   return (
     <div className="gallery" id="gallery">
       <div className="gallery__header">
@@ -20,7 +20,7 @@ function Gallery() {
           and let us know if you have any questions.
         </p>
         <p className="gallery__text">
-          To view a larger version of the image, simply{" "}
+          To view more information about the image, simply{" "}
           <span className="gallery__text_bold">click</span> on it. 👆🏼
         </p>
       </div>
@@ -33,6 +33,9 @@ function Gallery() {
                 className="gallery__image"
                 src={data.image}
                 alt="service-pic"
+                onClick={() => {
+                  cardClick(data);
+                }}
               />
             </li>
           ))}
