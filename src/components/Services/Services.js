@@ -4,7 +4,7 @@ import "./Services.css";
 import ItemCard from "../ItemCard/ItemCard";
 import { servicesData } from "../../utils/constants";
 
-function Services() {
+function Services({ scrollToSection }) {
   return (
     <section className="services" id="services">
       <div className="services__header">
@@ -31,7 +31,14 @@ function Services() {
           Click the link to browse our collection of images and descriptions.
         </p>
         <NavLink to="/gallery">
-          <button className="services__footer-link">📷 Gallery 🖼️</button>
+          <button
+            className="services__footer-link"
+            onClick={() => {
+              scrollToSection("gallery");
+            }}
+          >
+            📷 Gallery 🖼️
+          </button>
         </NavLink>
       </div>
     </section>
