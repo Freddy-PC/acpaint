@@ -1,8 +1,31 @@
+/* .app__container{} */
 .app__page {
   padding: 25px 50px 100px;
-  margin: 0 auto; /* Center the content horizontally */
+  margin: 0 auto 50px; /* Center the content horizontally */
   max-width: 1400px;
 }
+
+/* .app__page-top {
+  max-width: 1400px;
+  padding: 25px 50px;
+  margin: 0 auto;
+}
+.app__page {
+  max-width: 1400px;
+  padding: 0 50px 0;
+  margin: 0 auto 50px;
+}
+.app__page-bottom {
+  max-width: 1400px;
+  padding: 0 50px 100px;
+  margin: 0 auto 50px;
+} */
+
+/* Make a class to put in Navigation, Services, and Footer */
+/* Needds to be directly on the component's first class */
+/* I need the class to not be present in Header */
+
+/* Goal: Have header image extend all the way */
 
 @media screen and (max-width: 500px) {
   .app__page {
