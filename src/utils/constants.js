@@ -66,72 +66,72 @@ const servicesData = [
 const galleryData = [
   {
     image: deck1,
-    description: "",
+    description: "2023 > Trailer home Deck staining",
     service: "deck",
   },
   {
     image: deck2,
-    description: "",
+    description: "2018 > Deck painting",
     service: "deck",
   },
   {
     image: deck3,
-    description: "",
+    description: "2019 > Deck staining",
     service: "deck",
   },
   {
     image: deck4,
-    description: "",
+    description: "2018 > Deck staining",
     service: "deck",
   },
   {
     image: exterior1,
-    description: "",
+    description: "2019 > Deck staining",
     service: "exterior",
   },
   {
     image: exterior2,
-    description: "",
+    description: "2020",
     service: "exterior",
   },
   {
     image: exterior3,
-    description: "",
+    description: "2018 > Trailer home painting",
     service: "exterior",
   },
   {
     image: exterior4,
-    description: "",
+    description: "2017",
     service: "exterior",
   },
   {
     image: exterior5,
-    description: "",
+    description: "2018",
     service: "exterior",
   },
   {
     image: interior1,
-    description: "",
+    description: "2017",
     service: "interior",
   },
   {
     image: interior2,
-    description: "",
+    description: "2017",
     service: "interior",
   },
   {
     image: interior3,
-    description: "",
+    description: "2021",
     service: "interior",
   },
   {
     image: popInterior1,
-    description: "",
+    description: "2021",
     service: ["popcorn", "interior"],
   },
   {
     image: stain1,
-    description: "",
+    description: "2023",
     service: "stain",
   },
 ];
