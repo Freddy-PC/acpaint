@@ -1,8 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-import "../Header/Header.css";
 import "./Navigation.css";
+// import "../App/App.css";
 
 import logoImage from "../../images/paintLogo.svg";
 
@@ -75,6 +74,7 @@ const Navigation = ({
               to="/gallery"
               className="navigation__navlink"
               onClick={() => {
+                scrollToSection("gallery");
                 closeMenu();
               }}
             >

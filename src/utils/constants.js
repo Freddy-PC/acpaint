@@ -19,7 +19,7 @@ import exterior5 from "../images/exterior__5.jpg";
 import interior1 from "../images/interior__1_after.jpg";
 import interior2 from "../images/interior__2_after.jpg";
 import interior3 from "../images/interior__3_after.jpg";
-import popInterior1 from "../images/popInterior__1_after.jpg";
+import interior4 from "../images/interior__4_after.jpg";
 import stain1 from "../images/staining_1_after.jpg";
 
 // import exterior6 from "../images/exterior__6.jpg"
@@ -125,14 +125,14 @@ const galleryData = [
     service: "interior",
   },
   {
-    image: popInterior1,
+    image: interior4,
     description: "2021",
-    service: ["popcorn", "interior"],
+    service: "interior",
   },
   {
     image: stain1,
     description: "2023",
-    service: "stain",
+    service: "stain > Wood staining",
   },
 ];
 
