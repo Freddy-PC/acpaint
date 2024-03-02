@@ -1,6 +1,7 @@
 import React from "react";
 import "./Gallery.css";
 import { galleryData } from "../../utils/constants";
+import "../App/App.css";
 
 // need to make a alt tag functionality
 // conditionally renders the description
@@ -24,7 +25,7 @@ function Gallery({ cardClick }) {
           <span className="gallery__text_bold">click</span> on it. 👆🏼
         </p>
       </div>
-      <div className="gallery__images">
+      <div className="gallery__images app__page-interior">
         <h3 className="gallery__image-title">Images</h3>
         <ul className="gallery__image-list">
           {galleryData.map((data, index) => (

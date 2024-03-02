@@ -92,7 +92,6 @@
     left: 0;
     width: 100%;
     background-color: white;
-    border-top: 0.1px solid black;
     height: 0px;
     transition: height 0.5s ease; /* after closing */
     overflow: hidden; /* Hide overflow content */
@@ -113,9 +112,11 @@
     background-color: rgb(93, 149, 255);
   }
 
-  /* visabillaty at last for links*/
+  /* visabillaty at last for links */
+  /* if another link is added, height needs to be altered*/
   .navigation__links_active {
-    height: 245px;
+    border-top: 0.1px solid black;
+    height: 210px;
     transition: height 0.5s ease; /* after opening */
   }
 }

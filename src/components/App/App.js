@@ -64,13 +64,15 @@ function App() {
   };
 
   return (
-    <div className="app__page">
-      <Navigation
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        scrollToSection={scrollToSection}
-        closeMenu={closeMenu}
-      />
+    <div className="app__page-container">
+      <div className="app__page-top">
+        <Navigation
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          scrollToSection={scrollToSection}
+          closeMenu={closeMenu}
+        />
+      </div>
       <Routes>
         <Route path="/gallery" element={<Gallery cardClick={handleClick} />} />
         {/* <Route path="/about" element={<About />} /> */}
@@ -81,7 +83,9 @@ function App() {
           }
         />
       </Routes>
-      <Footer />
+      <div className="app__page-bottom">
+        <Footer />
+      </div>
       {activeModal === MODAL_TYPE.PREVIEW && selectedCard && (
         <ItemModal
           cardData={selectedCard}
