@@ -15,7 +15,9 @@ const Contacts = () => {
       </div>
       <div className="contacts__columns">
         <div className="contacts__column">
-          <h3 className="contacts__title">Socials</h3>
+          <h3 className="contacts__title">
+            <span className="contacts__title_underline">Socials</span>
+          </h3>
           <ul className="contacts__list">
             <li className="contacts__list-item">
               <img
@@ -36,7 +38,9 @@ const Contacts = () => {
           </ul>
         </div>
         <div className="contacts__column">
-          <h3 className="contacts__title">Hours</h3>
+          <h3 className="contacts__title">
+            <span className="contacts__title_underline">Hours</span>
+          </h3>
           <p className="contacts__text-hours">Weekdays: 7:00AM - 5:00PM</p>
           <p className="contacts__text-hours">Weekends: 7:00AM - 5:00PM</p>
         </div>

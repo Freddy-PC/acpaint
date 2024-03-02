@@ -2,12 +2,6 @@ import React from "react";
 import "./ItemCard.css";
 
 function ItemCard({ title, icon, text, cardIndexNumber }) {
-  // split will return a error of undefined if image property is EMPTY
-  // Extracting file name from icon path
-  // const fileName = icon.split("/").pop().split(".")[0];
-  // // Capitalizing the first letter of the file name
-  // const altText = fileName.charAt(0).toUpperCase() + fileName.slice(1);
-
   // Check if icon is an array
   // if array length is greater than 1 then a placeholder
   const icons = Array.isArray(icon) ? icon : [icon];

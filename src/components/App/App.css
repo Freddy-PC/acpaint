@@ -17,7 +17,10 @@
 
 @media screen and (max-width: 500px) {
   .app__page-top,
-  .app__page {
+  .app__page-interior {
     padding: 25px 25px 0;
+  }
+  .app__page-bottom {
+    padding: 75px 25px 100px;
   }
 }
