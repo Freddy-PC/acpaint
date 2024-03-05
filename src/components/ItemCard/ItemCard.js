@@ -16,7 +16,7 @@ function ItemCard({ title, icon, text, cardIndexNumber }) {
             key={index}
             className={`card__image card__image_cardIndex${cardIndexNumber}-imageIndex${index}`} // Dynamically assign unique class name
             src={image}
-            alt={`${title} Image ${index + 1}`}
+            alt={`${title}`}
           />
         ))}
         {icons.length > 1 && <div className={`card__image_placeholder`} />}

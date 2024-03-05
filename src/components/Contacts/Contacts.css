@@ -7,9 +7,11 @@
   align-items: center;
   text-align: center;
 }
-/* .contacts__header {}
-.contacts__title {} */
-.contacts__title_underline {
+/* .contacts__header {} */
+.contacts__header-title {
+  font-size: 40px;
+}
+.contacts__column-title_underline {
   text-decoration: underline;
 }
 .contacts__columns {
@@ -36,12 +38,12 @@
   height: 10%;
 }
 
-/* .contacts__title {}
+/* .contacts__column-title {}
 .contacts__info {}
 .contacts__text-hours {} */
 
 @media screen and (max-width: 850px) {
-  .contacts__title {
+  .contacts__column-title {
     display: flex;
     justify-content: center;
   }

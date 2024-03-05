@@ -7,7 +7,7 @@ const Contacts = () => {
   return (
     <div className="contacts" id="contacts">
       <div className="contacts__header">
-        <h1 className="contacts__title">Contacts</h1>
+        <h3 className="contacts__header-title">Contacts</h3>
         <p className="contacts__text">
           We offer free estimates. Feel free to email or call us regarding any
           of your painting needs.
@@ -15,8 +15,8 @@ const Contacts = () => {
       </div>
       <div className="contacts__columns">
         <div className="contacts__column">
-          <h3 className="contacts__title">
-            <span className="contacts__title_underline">Socials</span>
+          <h3 className="contacts__column-title">
+            <span className="contacts__column-title_underline">Socials</span>
           </h3>
           <ul className="contacts__list">
             <li className="contacts__list-item">
@@ -38,8 +38,8 @@ const Contacts = () => {
           </ul>
         </div>
         <div className="contacts__column">
-          <h3 className="contacts__title">
-            <span className="contacts__title_underline">Hours</span>
+          <h3 className="contacts__column-title">
+            <span className="contacts__column-title_underline">Hours</span>
           </h3>
           <p className="contacts__text-hours">Weekdays: 7:00AM - 5:00PM</p>
           <p className="contacts__text-hours">Weekends: 7:00AM - 5:00PM</p>
