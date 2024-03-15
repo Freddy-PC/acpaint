@@ -38,7 +38,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Freddy-PC.github.io/acpaint.git",
+  "homepage": "https://freddy-pc.github.io/acpaint",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.23.9",
