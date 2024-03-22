@@ -12,6 +12,12 @@ const Contacts = () => {
           We offer free estimates. Feel free to email or call us regarding any
           of your painting needs.
         </p>
+        <p className="contacts__text">
+          To email us on your default email provider, click 👆🏼 the email below.
+        </p>
+        {/* <p className="contacts__text">
+          If you would like to email us here, use the Email form below! 📥
+        </p> */}
       </div>
       <div className="contacts__columns">
         <div className="contacts__column">
@@ -20,20 +26,30 @@ const Contacts = () => {
           </h3>
           <ul className="contacts__list">
             <li className="contacts__list-item">
-              <img
-                className="contacts__image"
-                src={emailLogo}
-                alt="company-email"
-              />
-              <p className="contacts__info">acpainting@gmail.com</p>
+              <a
+                className="contact__container contact__container_column"
+                href="mailto:?to=acpaint.org@gmail.com"
+              >
+                <img
+                  className="contacts__image"
+                  src={emailLogo}
+                  alt="company-email"
+                />
+                <p className="contacts__info">acpaint.org@gmail.com</p>
+              </a>
             </li>
             <li className="contacts__list-item">
-              <img
-                className="contacts__image"
-                src={phoneLogo}
-                alt="phone-number"
-              />
-              <p className="contacts__info">828 713-9620</p>
+              <a
+                className="contact__container contact__container_column"
+                href="tel:8287139620"
+              >
+                <img
+                  className="contacts__image"
+                  src={phoneLogo}
+                  alt="phone-number"
+                />
+                <p className="contacts__info">828 713-9620</p>
+              </a>
             </li>
           </ul>
         </div>
