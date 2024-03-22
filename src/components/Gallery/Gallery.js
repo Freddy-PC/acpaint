@@ -17,12 +17,12 @@ function Gallery({ cardClick }) {
         </p>
         <p className="gallery__text">
           Please browse our{" "}
-          <span className="gallery__text_underline">collection of images</span>{" "}
-          and let us know if you have any questions.
+          <span className="app__text_underline">collection of images</span> and
+          let us know if you have any questions.
         </p>
         <p className="gallery__text">
           To view more information about the image, simply{" "}
-          <span className="gallery__text_bold">click</span> on it. 👆🏼
+          <span className="app__text_bold">click</span> on it. 👆🏼
         </p>
       </div>
       <div className="gallery__images app__page-interior">

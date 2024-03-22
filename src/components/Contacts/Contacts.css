@@ -35,6 +35,10 @@
   align-items: center;
 }
 /* .contacts__text {} */
+.contacts__text:nth-child(3),
+.contacts__text:nth-child(4) {
+  color: rgb(100, 100, 100);
+}
 .contacts__image {
   margin-right: 25px;
   width: 10%;

@@ -2,6 +2,7 @@ import React from "react";
 import "./Contacts.css";
 import emailLogo from "../../images/gmailLogo.png";
 import phoneLogo from "../../images/phoneLogo.png";
+import "../App/App.css";
 
 const Contacts = () => {
   return (
@@ -9,14 +10,19 @@ const Contacts = () => {
       <div className="contacts__header">
         <h3 className="contacts__header-title">Contacts</h3>
         <p className="contacts__text">
-          We offer free estimates. Feel free to email or call us regarding any
-          of your painting needs.
+          We offer <span className="app__text_bold">free estimates</span>. Feel
+          free to email or call us regarding any of your painting needs.
         </p>
         <p className="contacts__text">
-          To email us on your default email provider, click 👆🏼 the email below.
+          📩 To <span className="app__text_underline">email</span> us on your
+          default email provider, click the email below.
+        </p>
+        <p className="contacts__text">
+          📱 To <span className="app__text_underline">call</span> us on your
+          mobile device, click the number below.
         </p>
         {/* <p className="contacts__text">
-          If you would like to email us here, use the Email form below! 📥
+          If you would like to <span className="app__text_underline">email us here</span>, use the Email form below! 📥
         </p> */}
       </div>
       <div className="contacts__columns">
