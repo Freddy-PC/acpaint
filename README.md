@@ -1,72 +1,60 @@
-# Getting Started with Create React App
+# A&C Paint Company
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+- Project Purpose
+- How to access the Application
+- Tech & Techniques
+- Future Updates?
 
-In the project directory, you can run:
+## Project Purpose
 
-### `npm start`
+The purpose of the A&C Paint Company's website is to offer information about their painting services.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users can easily access information on painting services, contact details, and the gallery through various navigation paths.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to access the Application
 
-### `npm test`
+You can visit the application by [Clicking Here](acpaint.org)!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Or copy any of these addresses into your search bar:
 
-### `npm run build`
+1. https://acpaint.org
+2. acpaint.org
+3. www.acpaint.org
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech & Techniques
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The webpage was created using React, JavaScript, HTML and CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Tech/libraries
 
-### `npm run eject`
+- Visual Studio Code
+- Github
+- Git Bash
+- Semantic HTML5
+- CSS 3
+- JavaScript
+- SquareSpace Doamins
+- Netlify
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Techniques
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Flexbox
+- Positioning
+- Metadata for search Engine Optimization (SEO)
+- BEM Methodology
+- CSS Animations
+- React Router
+- Media Queries
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Updates?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The following are some features that are in the works.
 
-## Learn More
+- Redesign for the Homepage
+- A Dark Mode toggle Button
+- A button that changes the text language
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# acpaint
+- Before and After pictures for the Gallery page
+- A Email form as a dropdown menu withing the Contacts page
