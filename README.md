@@ -15,7 +15,7 @@ Users can easily access information on painting services, contact details, and t
 
 ## How to access the Application
 
-You can visit the application by [Clicking Here](www.acpaint.org)!
+You can visit the application by [Clicking Here](http://acpaint.org)!
 
 Or copy any of these addresses into your search bar:
 
