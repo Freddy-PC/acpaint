@@ -65,12 +65,13 @@ const servicesData = [
 
 const galleryData = [
   {
-    image: deck1,
+    imageB: deck1,
+    imageA: deck2,
     description: "2023 > Trailer home Deck staining",
     service: "deck",
   },
   {
-    image: deck2,
+    imageB: deck2,
     description: "2018 > Deck painting",
     service: "deck",
   },
