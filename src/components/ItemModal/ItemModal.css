@@ -37,6 +37,10 @@
   margin: 0;
 }
 
+.itemModal__button-container {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 950px) {
   .itemModal__closeLogo {
     right: 30px;
