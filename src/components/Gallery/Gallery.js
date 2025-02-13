@@ -32,7 +32,7 @@ function Gallery({ cardClick }) {
             <li className="gallery__image-item" key={index}>
               <img
                 className="gallery__image"
-                src={data.image}
+                src={data.imageB}
                 alt="service-pic"
                 onClick={() => {
                   cardClick(data);
